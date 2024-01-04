@@ -1,0 +1,144 @@
+@import 'bootstrap/scss/bootstrap';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variable - start*/
+$primary-color: #4f6f52;
+$secondary-color: #739072;
+$third-color: #86a789;
+$fourth-color: #d2e3c8;
+$primary-font: #ffffff;
+$secondary-font: #739072;
+$third-font: #d2e3c8;
+$bold-font: 700;
+$semibold-font: 600;
+$medium-font: 500;
+$regular-font: 400;
+/* Variable - end */
+
+/* Main - start*/
+body {
+    font-family: 'Poppins', sans-serif;
+    color: $primary-font;
+
+    header {
+        background-color: $primary-color;
+        padding: 5px 0 40px;
+        min-height: 250px;
+    }
+
+    main {
+        border-radius: 40px 40px 0px 0px;
+        background-color: $fourth-color;
+        padding-bottom: 50px;
+        min-height: 450px;
+        margin-top: -40px;
+
+        .card {
+            background: var(--secondary-color);
+            border-radius: 20px;
+            margin-bottom: 18px;
+            min-height: 80px;
+            border: none;
+
+            .card-button {
+                background: $secondary-color;
+                border-radius: 20px;
+                border: none;
+
+                .card-item {
+                    justify-content: space-between;
+                    font-weight: $bold-font;
+                    color: $primary-font;
+                    align-items: center;
+                    min-height: 80px;
+                    display: flex;
+
+                    .card-name {
+                        max-width: 70%;
+                        font-size: 14px;
+                    }
+
+                    svg {
+                        text {
+                            fill: $secondary-color;
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+
+            .modal-body {
+                p {
+                    font-size: 16px;
+                }
+                .arab {
+                    font-size: 26px;
+                }
+            }
+        }
+
+        .error-message {
+            color: $secondary-font;
+            margin-top: 45%;
+        }
+    }
+
+    footer {
+        background-color: $primary-color;
+        border-radius: 40px 40px 0px 0px;
+        justify-content: center;
+        align-items: center;
+        margin-top: -50px;
+        min-height: 50px;
+        font-size: 12px;
+        display: flex;
+    }
+}
+/* Main - end */
+
+/* Medium (Tablet) */
+@media screen and (min-width: 768px) {
+    main {
+        min-height: 968px !important;
+        .card-button {
+            min-height: 135px !important;
+
+            .card-name {
+                max-width: 60% !important;
+            }
+        }
+    }
+}
+
+/* Large (Tablet - Desktop) */
+@media screen and (min-width: 968px) {
+    main {
+        min-height: 515px !important;
+
+        .card {
+            min-height: 50px !important;
+
+            .card-button {
+                min-height: 0px !important;
+
+                .card-item {
+                    min-height: 60px !important;
+
+                    .card-name {
+                        max-width: 70% !important;
+                    }
+                }
+            }
+        }
+
+        .error-message {
+            margin-top: 20% !important;
+        }
+    }
+}

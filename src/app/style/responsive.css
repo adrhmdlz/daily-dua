@@ -1,0 +1,26 @@
+/* Small (Tablet) */
+@media screen and (min-width: 576px) {
+    main {
+        min-height: 1500px;
+    }
+}
+
+/* Medium (Tablet) */
+@media screen and (min-width: 768px) {
+    main {
+        min-height: 750px;
+    }
+    .card {
+        min-height: 50px;
+    }
+    .card-item {
+        min-height: 50px;
+    }
+}
+
+/* Large (Tablet - Desktop) */
+@media screen and (max-width: 892px) {
+    main {
+        min-height: 1000px;
+    }
+}
