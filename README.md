@@ -64,7 +64,7 @@ Also this app use or retrieve data from [fitrahive's](https://github.com/fitrahi
 
               http-server ./dist
 
-Feel free to change, edit and replace it, but don't forget to include the original source okay 😉.
+Feel free to change, edit and replace it, but don't forget to include the original source okay 😉. By contributing to this repo, you have helped spread Islamic knowledge throughout the world.
 
 ## Build With
 
