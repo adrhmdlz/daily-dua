@@ -2,7 +2,7 @@ import axios from 'axios';
 import { renderAllDua } from '../../app';
 import { handleApiError } from '../../utils/api-error-handler';
 
-const baseUrl = 'https://dua-dhikr-sooluh.koyeb.app';
+const baseUrl = 'https://dua-dhikr.vercel.app';
 
 // Fetch all dua list with GET method
 export const getDua = () => {
